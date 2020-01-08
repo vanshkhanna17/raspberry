@@ -87,7 +87,7 @@ public class OutGate {
 				bri.close();
 				String result = new OutGate().RfidValidation(line); // calling API functionality
 				String response[] = result.split(" ");
-				if (response[0].equalsIgnoreCase("open")) {
+				if (response[0].equalsIgnoreCase("success")) {
 					new OutGate().LEDConnection(); // making Green LED
 				}
 				Thread.sleep(1000);
